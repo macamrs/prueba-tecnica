@@ -1,0 +1,17 @@
+.footer-container {
+    display: flex;
+    background-color: #2A3037;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.socials-container {
+    display: flex;
+    gap: 1rem;
+}

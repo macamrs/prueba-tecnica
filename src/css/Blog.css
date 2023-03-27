@@ -1,0 +1,33 @@
+.blog-container {
+    padding: 4rem 5rem;
+}
+
+.blog-title {
+    color: #2A3037;
+    padding-bottom: 1.5rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 1rem;
+}
+
+.time-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.imagen-blog {
+    width: 100%;
+}
+
+.tag {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.blog-card {
+    position: relative;
+}
