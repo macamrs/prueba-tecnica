@@ -8,4 +8,4 @@
 - Compartir repositorio público del proyecto.
 - Adjuntar .env en caso de ser necesario.
 
-## Link a deply > https://prueba-tecnica-macamrs.vercel.app/
+## Link a deploy > https://prueba-tecnica-macamrs.vercel.app/
