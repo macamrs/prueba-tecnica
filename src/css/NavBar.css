@@ -2,14 +2,16 @@
     display: flex;
     background-color: var(--clr-primary);
     box-shadow: 0px 8px 19px 0px #00000029;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 5rem;
+    padding: 1.5rem 8rem;
     width: 100%;
-    padding: 1rem 0;
 }
 
 .links-container {
@@ -17,11 +19,74 @@
     gap: 2rem;
 }
 
-.links-container > a {
+.inactive {
     text-decoration: none;
     color: #CBD0D3;
+    font-size: 1.15rem;
 }
 
-.links-container > a:active {
+.active {
     color: #2A3037;
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+.burger-button {
+    display: none;
+}
+
+.burger-button > button {
+    all: unset;
+}
+
+.responsive-container {
+    background-color: rgb(42, 48, 55, 0.65);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 150;
+    transform: translateX(0%);
+    transition: transform .3s;
+    will-change: transform;
+}
+
+.responsive-menu {
+    background-color: var(--clr-primary);
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    transition: .3s;
+}
+
+.links-container-responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.close-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 10% 0;
+}
+
+.close-button > button {
+    all: unset;
+}
+
+@media screen and (max-width:700px) {
+    .burger-button {
+        display: block;
+    }
+
+    .nav {
+        padding: 1.5rem 2rem;
+    }
+
+    .links-container {
+        display: none;
+    }
 }

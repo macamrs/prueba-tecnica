@@ -9,7 +9,7 @@ function Splash() {
             <div className='hero-title-container'>
                 <div className='hero-title'>
                     <img src={pin} alt="Map Pin" />
-                    <h2 className='uppercase primary-color'>America del Sur</h2>
+                    <h1 className='uppercase primary-color'>America del Sur</h1>
                 </div>
                 <div className='line'></div>
                 <div className='hero-subtitle'>

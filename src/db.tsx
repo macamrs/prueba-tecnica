@@ -38,7 +38,7 @@ const blog = [
     tag: "Ciudad",
     titulo: "Artículo de puente",
     texto:
-      "Un puente es una construccion que permite salvar un accidente geográfico",
+      "Un puente es una construcción que permite salvar un accidente geográfico como un río.",
     tiempo: "2m",
     imagen: blog1,
   },
@@ -47,7 +47,7 @@ const blog = [
     tag: "Aventura",
     titulo: "Artículo de bosque",
     texto:
-      "Lugar poblado de árboles y arbustos. Área con una importante densidad de",
+      "Lugar poblado de árboles y arbustos. Área con una importante densidad de árboles.",
     tiempo: "15m",
     imagen: blog2,
   },

@@ -1,5 +1,5 @@
 .tendencias-container {
-    padding: 4rem 5rem;
+    padding: 4rem 8rem;
 }
 
 .tendencias-title {
@@ -9,8 +9,10 @@
 
 .tendencias-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    justify-content: space-between;
+    justify-items: stretch;
 }
 
 .tendencias-card {
@@ -19,7 +21,11 @@
     box-shadow: 0px 8px 19px 0px #00000029;
 }
 
-.tendencias-card > img {
+.img-container {
+    position: relative;
+}
+
+.img-container > img {
     border-radius: 0.5rem 0.5rem 0 0;
     width: 100%;
     object-fit: cover;
@@ -27,8 +33,36 @@
 }
 
 .text-container {
-    padding: 2rem;
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.text-container > p {
+    color: #7A838D;
+    font-size: 0.85rem;
+}
+
+.nuevo-tag {
+    position: absolute;
+    top: 92%;
+    left: 2rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.25rem;
+    background-color: var(--clr-secondary);
+}
+
+@media screen and (max-width: 700px) {
+    .tendencias-container {
+        padding: 4rem 2rem;
+    }
+
+    .tendencias-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .text-container {
+        padding: 2.5rem 2rem;
+    }
 }

@@ -61,5 +61,5 @@ select {
 }
 
 .home-background {
-    background: linear-gradient(to bottom, var(--clr-accent) 50%, var(--clr-primary) 50%);
+    background: linear-gradient(to bottom, var(--clr-accent) 40%, var(--clr-primary) 40%);
 }
